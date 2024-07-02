@@ -1,0 +1,22 @@
+[
+    {
+        "id": 8,
+        "train_params": {
+            "epochs": 160,
+            "batch": 16
+        },
+        "train_mode": "fine-tuning",
+        "dataset": "ecg-fragment_360hz",
+        "upsampler": true,
+        "parent_dir": "training/ts2vec-ptb-xl700__20240529_184647",
+        "optim": {
+            "lr": 3e-05
+        },
+        "model": "fcn",
+        "model_args": {
+            "in_dim": 128,
+            "out_dim": 6
+        },
+        "seed": 123
+    }
+]

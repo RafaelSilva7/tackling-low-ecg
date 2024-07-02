@@ -1,0 +1,20 @@
+{
+    "train_params": {
+        "epochs": 120,
+        "batch": 128
+    },
+    "dataset": "ptb-xl-2s-univar-700_360hz",
+    "optim": {
+        "lr": 3e-4
+    },
+    "model": "ts2vec",
+    "model_args": {
+        "in_dim": 1,
+        "out_dim": 128,
+        "hidden_dim": 64,
+        "depth": 7,
+        "kernel_size": 3,
+        "dropout": 0.1,
+        "mask_mode": "binomial"
+    }
+}

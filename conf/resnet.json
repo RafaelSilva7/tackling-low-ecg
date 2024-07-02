@@ -1,0 +1,22 @@
+[
+    {
+        "id": 10,
+        "train_params": {
+            "epochs": 60,
+            "batch": 16
+        },
+        "train_mode": "supervised",
+        "dataset": "ecg-fragment_360hz",
+        "upsampler": true,
+        "parent_dir": "training/ts2vec-ptb-xl700__20240529_184647",
+        "optim": {
+            "lr": 0.0003
+        },
+        "model": "resnet",
+        "model_args": {
+            "in_dim": 1,
+            "out_dim": 6
+        },
+        "seed": 123
+    }
+]

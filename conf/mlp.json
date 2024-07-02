@@ -1,0 +1,23 @@
+[
+    {
+        "id": 2,
+        "train_params": {
+            "epochs": 20,
+            "batch": 16
+        },
+        "train_mode": "linear-probing",
+        "dataset": "ecg-fragment_500hz",
+        "parent_dir": "training/ts2vec-ptb-xl700__20240529_184647",
+        "optim": {
+            "lr": 3e-05
+        },
+        "model": "mlp",
+        "model_args": {
+            "in_dim": 128,
+            "out_dim": 6,
+            "hidden_dim": 1024,
+            "sample_size": 1000
+        },
+        "seed": 123
+    }
+]

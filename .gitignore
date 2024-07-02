@@ -1,0 +1,11 @@
+.rsync-filter
+.temporary
+
+# python files
+.ipynb_checkpoints
+__pycache__
+
+# folder content
+datasets/*
+training/*
+conf/*

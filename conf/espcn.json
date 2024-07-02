@@ -1,0 +1,17 @@
+{
+    "train_params": {
+        "epochs": 25,
+        "batch": 64
+    },
+    "dataset": "ptb-xl-2s-univar-700",
+    "parent_dir": "training/tstcc-ptb-xl-espcn__20240524_172514",
+    "optim": {
+        "lr": 1e-04
+    },
+    "model": "espcn",
+    "model_args": {
+        "size_in": 720,
+        "size_out": 1000
+    },
+    "seed": 123
+}

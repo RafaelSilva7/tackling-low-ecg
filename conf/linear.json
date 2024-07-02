@@ -1,0 +1,22 @@
+[
+    {
+        "id": 9,
+        "train_params": {
+            "epochs": 80,
+            "batch": 16
+        },
+        "train_mode": "supervised",
+        "dataset": "ecg-fragment_360hz",
+        "parent_dir": "training/ts2vec-ptb-xl360hz__20240606_194525",
+        "optim": {
+            "lr": 0.0001
+        },
+        "model": "linear",
+        "model_args": {
+            "in_dim": 1,
+            "out_dim": 6,
+            "sample_size": 720
+        },
+        "seed": 123
+    }
+]

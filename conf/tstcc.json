@@ -1,0 +1,34 @@
+{
+    "train_params": {
+        "epochs": 60,
+        "batch": 16
+    },
+    "dataset": "ecg-fragment_360hz",
+    "optim": {
+        "lr": 1e-4
+    },
+    "model": "tstcc",
+    "model_args": {
+        "encoder": {
+            "in_dim": 1,
+            "out_dim": 128,
+            "kernel_size": 8,
+            "stride": 1,
+            "dropout": 0.35
+        },
+        "tc_model": {
+            "hidden_dim": 64,
+            "out_dim": 128,
+            "timesteps": 30
+        },
+        "cc_loss": {
+            "cc_temp": 0.2,
+            "use_cosine": true
+        },
+        "augmentation": {
+            "jitter_scale": 0.5,
+            "jitter_ratio": 0.38,
+            "max_seg": 8
+        }
+    }
+}

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 2,
+        "train_params": {
+            "epochs": 60,
+            "batch": 16
+        },
+        "train_mode": "fine-tuning",
+        "dataset": "ecg-fragment_360hz",
+        "upsampler": true,
+        "parent_dir": "training/ts2vec-ptb-xl700__20240529_184647",
+        "optim": {
+            "lr": 3e-05
+        },
+        "model": "oates-mlp",
+        "model_args": {
+            "in_dim": 128,
+            "out_dim": 6,
+            "sample_size": 1000
+        },
+        "seed": 123
+    }
+]
